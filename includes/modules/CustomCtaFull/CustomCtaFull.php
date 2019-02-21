@@ -107,6 +107,17 @@ class DICM_CTA_Has_VB_Support extends ET_Builder_Module {
 			),
 		);
 	}
+        
+        
+
+    function get_custom_css_fields_config() {
+        return array(
+            'dicm-title' => array(
+                'label' => 'Title',
+                'selector' => ".dicm-title",
+            ),
+        );
+    }
 
 	/**
 	 * Render module output
